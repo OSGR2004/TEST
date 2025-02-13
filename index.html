@@ -12,7 +12,7 @@
             color: #fff;
             margin: 0;
             padding: 20px;
-            overflow: hidden;
+            overflow-y: auto; /* Permitir desplazamiento vertical */
         }
         nav {
             background: #ff758c;
@@ -134,6 +134,18 @@
         .back-button:hover {
             background: #ff5e78;
         }
+        /* Scrollbar styling */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #fad0c4;
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: #ff758c;
+            border-radius: 20px;
+            border: 3px solid #fad0c4;
+        }
     </style>
 </head>
 <body>
@@ -173,6 +185,13 @@
         <p>¿Por qué te amo tanto?</p>
         <button onclick="alert('Correcto! Porque eres increíblemente especial 💖')">Porque eres increíblemente especial</button>
         <button onclick="alert('Correcto! Porque eres mi felicidad ❤️')">Porque eres mi felicidad</button>
+        <!-- Nuevas Preguntas -->
+        <p>¿Qué me hace feliz?</p>
+        <button onclick="alert('Correcto! Tu sonrisa 💖')">Tu sonrisa</button>
+        <button onclick="alert('Correcto! Tu compañía 💖')">Tu compañía</button>
+        <p>¿Cuál es mi sueño?</p>
+        <button onclick="alert('Correcto! Pasar mi vida contigo 💖')">Pasar mi vida contigo</button>
+        <button onclick="alert('Correcto! Hacerte feliz cada día 💖')">Hacerte feliz cada día</button>
     </div>
 
     <div class="counter-container" id="counter">
